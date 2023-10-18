@@ -44,7 +44,7 @@ resource "aws_instance" "web-server" {
     }
 }
 
-resource "aws_instance" "app-server" {
+resource "aws_instance" "app-server1" {
     ami = data.aws_ami.latest-ubuntu.id
     instance_type = "t2.micro"
     availability_zone = var.zone

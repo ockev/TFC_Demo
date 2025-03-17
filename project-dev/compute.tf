@@ -93,7 +93,7 @@ resource "aws_instance" "web-server" {
                 sudo bash -c 'echo your very first web server > /var/www/html/index.html'
                 EOF
     tags = {
-        Name = "kevins-${var.env}-web-server2"
+        Name = "kevins-${var.env}-web-server1"
     }
 }
 
